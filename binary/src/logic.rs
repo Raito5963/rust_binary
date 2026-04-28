@@ -51,7 +51,7 @@ pub fn adder(x: u32, y: u32)->(u32){
 
         let (cout, sum) = full_adder(bit_x, bit_y, carry);
 
-        res = or(res, left_shift(sum as u32, i as u32);
+        res = or(res, left_shift(sum as u32, i as u32));
 
         carry = cout;
     }
